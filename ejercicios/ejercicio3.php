@@ -1,8 +1,23 @@
 <?php
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+for($i=1;$i<=1000;$i++)
+{
+    if(primo($i))
+        echo "<br/>El número ".$i." es primo";
+    
+}
+ 
+function primo($num)
+{
+    $cont=0;
+    for($i=2;$i<=$num;$i++)
+    {
+        if($num%$i==0)
+        {
+            if(++$cont>1)
+                return false;
+        }
+    }
+    return true;
+}
+?>
 
