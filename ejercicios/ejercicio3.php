@@ -17,7 +17,7 @@ function primo($num)
                 return false;
         }
     }
-    return true;
+    return true;///////////////////
 }
 ?>
 
